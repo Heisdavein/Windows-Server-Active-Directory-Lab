@@ -97,7 +97,7 @@ After the authorisation completed successfully, I closed the wizard.
 
 ---
 
-# Step 2 — Creating the DHCP Scope
+# Step 2 Creating the DHCP Scope
 
 With the DHCP role installed, I opened the DHCP management console.
 
@@ -215,7 +215,7 @@ At this point, the DHCP server was fully configured and ready to begin assigning
 
 ---
 
-# Step 3 — Verifying DHCP Functionality
+# Step 3 Verifying DHCP Functionality
 
 After configuring DHCP, I wanted to confirm that clients were actually receiving the correct network configuration.
 
