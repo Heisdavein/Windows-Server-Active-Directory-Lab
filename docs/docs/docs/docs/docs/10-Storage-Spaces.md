@@ -179,11 +179,8 @@ I repeated the same process four more times until `server01` had a total of **fi
 
 The VMware configuration therefore contained the original 60 GB system disk plus five additional 10 GB disks.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `storage-spaces-vmware-disks.png`
->
-> **Description:** VMware Workstation hardware configuration for `server01`, showing the five additional 10 GB virtual disks alongside the original 60 GB system disk.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2115dd60-4839-4b8a-8f52-4f8652604993" />
+ VMware Workstation hardware configuration for `server01`, showing the five additional 10 GB virtual disks alongside the original 60 GB system disk.
 
 Once all five disks had been added, I clicked **OK** and powered the virtual machine back on.
 
@@ -240,12 +237,8 @@ as the partition style.
 GPT stands for **GUID Partition Table**. It is the modern partitioning standard used by Windows for managing disks.
 
 At this point, all five disks were online, initialized, and available for Storage Spaces.
-
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `storage-spaces-disks-online.png`
->
-> **Description:** Server Manager → File and Storage Services → Disks showing the five additional 10 GB disks online, unallocated, and using GPT.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1c3a9b08-ceb8-432e-9268-a66a27957e6e" />
+Server Manager → File and Storage Services → Disks showing the five additional 10 GB disks online, unallocated, and using GPT.
 
 ---
 
@@ -297,11 +290,8 @@ The storage pool was created successfully.
 
 At this stage, the five individual disks had been grouped into one logical storage pool that could be used to create virtual disks.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `storage-spaces-new-pool.png`
->
-> **Description:** New Storage Pool Wizard showing all five 10 GB physical disks selected for `Lab Storage Pool`.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/fff0ba78-3c96-4ac9-bd4e-3ee0ca462b13" />
+ New Storage Pool Wizard showing all five 10 GB physical disks selected for `Lab Storage Pool`.
 
 ---
 
@@ -342,14 +332,9 @@ If one disk fails, the remaining data and parity information can be used to reco
 
 > **Important:** The RAID 5 comparison is used here to explain the concept of the lab configuration. The implementation itself is Windows Storage Spaces Parity rather than a hardware RAID controller.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `storage-spaces-parity-layout.png`
->
-> **Description:** New Virtual Disk Wizard showing `Lab Virtual Disk` using the `Parity (like RAID 5)` storage layout.
-
----
-
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/895119c6-c5e1-420c-b9c7-ccb889d5ba02" />
+  New Virtual Disk Wizard showing `Lab Virtual Disk` using the `Parity (like RAID 5)` storage layout.
+  
 ## Selecting Thin Provisioning
 
 For the provisioning method, I selected:
@@ -428,12 +413,9 @@ Windows also provides ReFS, which offers additional resilience and modern storag
 8. I clicked **Create**.
 
 Once the wizard completed, I opened File Explorer and confirmed that the new `Z:` drive was available.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/de3235e9-7248-4be3-a950-6e8ee3af2b2c" />
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `storage-spaces-new-volume.png`
->
-> **Description:** New Volume Wizard showing `Z:` as the assigned drive letter and NTFS as the selected file system.
+New Volume Wizard showing `Z:` as the assigned drive letter and NTFS as the selected file system.
 
 ---
 
@@ -493,11 +475,8 @@ The lab output also showed approximately:
 
 of remaining space on the volume at the time of verification.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `storage-spaces-powershell-verification.png`
->
-> **Description:** PowerShell showing `Get-StoragePool`, `Get-VirtualDisk`, and `Get-Volume`, confirming `Lab Storage Pool`, `Lab Virtual Disk`, Parity, and the healthy NTFS `Z:` volume.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7f41f664-a707-468f-b9ff-a8bafdd7a98e" />
+ PowerShell showing `Get-StoragePool`, `Get-VirtualDisk`, and `Get-Volume`, confirming `Lab Storage Pool`, `Lab Virtual Disk`, Parity, and the healthy NTFS `Z:` volume.
 
 ---
 
@@ -667,26 +646,23 @@ Storage Pool
 This layered approach made the Storage Spaces architecture much easier for me to understand.
 
 ---
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/45342683-d5ee-4a74-8fe5-7eaf3d01ad23" />
+Server Manager showing the DHCP Server role installed on server01.
 
-# Screenshots
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a4bc80b4-a2c1-4f26-bc63-2e42bb8a501c" />
+DHCP New Scope Wizard showing the LAN Network – Lab Environment scope configuration.
 
-The following screenshots should be included in the repository to document the Storage Spaces implementation:
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3ef4fb17-af4c-4351-9e67-5187542a1cac" />
+DHCP Manager displaying the configured address pool ranging from 192.168.1.5 to 192.168.1.99.
 
-| Filename | Description |
-|---|---|
-| `storage-spaces-vmware-disks.png` | VMware hardware configuration showing the five additional 10 GB virtual disks. |
-| `storage-spaces-disks-online.png` | Server Manager showing the five disks online and initialized with GPT. |
-| `storage-spaces-new-pool.png` | New Storage Pool Wizard showing all five disks selected. |
-| `storage-spaces-parity-layout.png` | New Virtual Disk Wizard showing the Parity storage layout. |
-| `storage-spaces-new-volume.png` | New Volume Wizard showing `Z:` and NTFS configuration. |
-| `storage-spaces-powershell-verification.png` | PowerShell verification using `Get-StoragePool`, `Get-VirtualDisk`, and `Get-Volume`. |
-| `storage-spaces-z-drive.png` | File Explorer showing the completed `Storage Pool (Z:)` volume. |
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/66ffe606-13ec-47e1-bd66-45a61235da50" />
+DHCP Manager showing a client IP address successfully leased from the configured DHCP scope.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `storage-spaces-z-drive.png`
->
-> **Description:** File Explorer → This PC showing the completed `Storage Pool (Z:)` drive alongside the system `C:` drive.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3be161c9-d769-47a3-a804-ce9dd4e0e33c" />
+Command Prompt showing ipconfig /release, ipconfig /renew, and ipconfig /all verifying successful DHCP lease assignment.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/86772d97-1f92-4b66-ba13-6415b89cf600" />
+File Explorer → This PC showing the completed `Storage Pool (Z:)` drive alongside the system `C:` drive.
 
 ---
 
