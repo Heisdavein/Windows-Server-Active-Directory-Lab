@@ -53,7 +53,7 @@ With these prerequisites in place, I was ready to install and configure DHCP.
 
 ---
 
-# Step 1 — Installing the DHCP Server Role
+# Step 1- Installing the DHCP Server Role
 
 I started by opening **Server Manager**.
 
@@ -440,30 +440,23 @@ was provided as the DNS server.
 Verified the DHCP scope, address pool, leases, and reservation sections through DHCP Manager.
 
 ---
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8955ce45-298d-4487-a1bd-04531ad93903" />
+Server Manager showing the DHCP Server role installed on server01.
 
-# Screenshots
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/115f30e5-e5ac-4ddb-b156-7daef265b1e9" />
+DHCP New Scope Wizard showing the LAN Network – Lab Environment scope configuration.
 
-The following screenshots should be included in the repository where available.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/14d8a818-d133-4ac0-9f60-e4d0adf0161c" />
+DHCP Manager displaying the configured address pool ranging from 192.168.1.5 to 192.168.1.99.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `07-01-dhcp-server-role.png`  
-> **Description:** Server Manager showing the DHCP Server role installed on `server01`.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a36963d4-97bb-448d-ab79-3fc48a54c42e" />
+DHCP Manager showing a client IP address successfully leased from the configured DHCP scope.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `07-02-dhcp-scope-wizard.png`  
-> **Description:** DHCP New Scope Wizard showing the `LAN Network – Lab Environment` scope configuration.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d5705d01-ac82-4316-a734-8e2db887d8a3" />
+Command Prompt showing ipconfig /release, ipconfig /renew, and ipconfig /all verifying successful DHCP lease assignment
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `07-03-dhcp-address-pool.png`  
-> **Description:** DHCP Manager showing the configured address pool from `192.168.1.5` to `192.168.1.99`.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `07-04-dhcp-address-leases.png`  
-> **Description:** DHCP Manager showing a client lease assigned from the configured DHCP scope.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `07-05-ipconfig-verification.png`  
-> **Description:** Command Prompt showing `ipconfig /release`, `ipconfig /renew`, and `ipconfig /all` verification.
 
 ---
 
