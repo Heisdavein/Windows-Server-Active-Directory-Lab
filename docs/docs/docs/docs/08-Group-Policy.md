@@ -85,7 +85,7 @@ Administrators can also **Enforce** a Group Policy Object when a policy must rem
 
 ---
 
-# Step 1 — Opening Group Policy Management
+# Step 1 Opening Group Policy Management
 
 I began by opening **Group Policy Management**.
 
@@ -150,7 +150,7 @@ The important lesson for me was that the **Default Domain Policy already provide
 
 ---
 
-# Step 2 — Creating a Custom Group Policy Object
+# Step 2 Creating a Custom Group Policy Object
 
 After exploring the default policy, I wanted to create my own GPO and see how a policy is created, linked, configured, and tested.
 
@@ -246,7 +246,7 @@ Rather than configuring the restriction separately on every computer, I configur
 
 ---
 
-# Step 3 — Forcing an Immediate Group Policy Update
+# Step 3 Forcing an Immediate Group Policy Update
 
 Normally, Windows refreshes Group Policy automatically.
 
@@ -266,7 +266,7 @@ After running the command, I could test whether the new restriction had been app
 
 ---
 
-# Step 4 — Checking the FSMO Roles
+# Step 4 Checking the FSMO Roles
 
 As I learned more about Active Directory, I also learned about the five specialised **Flexible Single Master Operations (FSMO)** roles.
 
@@ -362,31 +362,27 @@ server01
 
 ---
 
-# Screenshots
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7ed231d7-1a2a-41aa-bb8d-f0b74e5dbff8" />
+Group Policy Management console showing the corp.danieltraining.com domain and the existing Default Domain Policy.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `08-01-group-policy-management.png`  
-> **Description:** Group Policy Management showing the `corp.danieltraining.com` domain and the existing Default Domain Policy.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ec1886c4-6ad6-463f-a730-87847ed99769" />
+Default Domain Policy displaying the existing password and account security settings.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `08-02-default-domain-policy.png`  
-> **Description:** Default Domain Policy settings showing the existing password and account security configuration.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/357bba71-21bc-460b-a860-d8f626ac799c" />
+Group Policy Management showing the Disable Control Panel – End Users GPO linked to the End Users Organizational Unit (OU).
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `08-03-disable-control-panel-gpo.png`  
-> **Description:** Group Policy Management showing the `Disable Control Panel - End Users` GPO linked to the `End Users` OU.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6e29aab5-fdeb-4daf-b2e9-9767a371b807" />
+Group Policy Management Editor showing Prohibit access to Control Panel and PC Settings configured as Enabled.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `08-04-control-panel-policy.png`  
-> **Description:** Group Policy Management Editor showing `Prohibit access to Control Panel and PC Settings` configured as Enabled.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7c440bd2-8f71-4797-8b59-5bd54d873eaf" />
+Command Prompt showing the gpupdate /force command being executed on a domain-joined client computer.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `08-05-gpupdate-force.png`  
-> **Description:** Command Prompt showing `gpupdate /force` being executed on the domain-joined computer.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f8552c9c-ec28-432a-b6b8-45f16c6ea8ef" />
+Command Prompt displaying the output of netdom query fsmo, confirming all five FSMO roles are assigned to server01.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `08-06-fsmo-roles.png`  
-> **Description:** Command Prompt showing the `netdom query fsmo` output with all five FSMO roles assigned to `server01`.
+
+
+
 
 ---
 
