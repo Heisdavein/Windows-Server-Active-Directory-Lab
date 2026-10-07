@@ -236,10 +236,7 @@ The share appeared with the following configuration:
 | Availability Type | Not Clustered |
 | Status | Online |
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `file-server-projects-share-server-manager.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2caab20d-06d8-45aa-b1a2-08bb3a65fae8" />
 > **Description:** Server Manager showing the `Projects` SMB share, its `Z:\Projects` folder path, SMB protocol, Not Clustered availability type, and Online status.
 
 ---
@@ -278,10 +275,7 @@ This confirmed that:
 - The configured permissions allowed the test file to be created.
 - Both servers were accessing the same centrally stored data.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `file-server-unc-access-server02.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b3c73b11-debe-4f8b-8995-0ea11d007d34" />
 > **Description:** File Explorer on `server02` accessing `\\server01\Projects` and showing the shared folder contents.
 
 ---
@@ -321,16 +315,11 @@ The shared folder then appeared in File Explorer on `server02` as the `Z:` drive
 
 Even though it looked like a locally attached disk, the data was actually stored on `server01`.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `file-server-map-network-drive.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9df01bb5-36f8-4ff4-9666-23c8898846c7" />
 > **Description:** The Map Network Drive dialog showing drive `Z:`, folder `\\server01\Projects`, and Reconnect at sign-in enabled.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `file-server-mapped-z-drive.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e706c695-bda6-4b57-b95e-ba084e186f61" />
+
 > **Description:** File Explorer on `server02` showing the shared `Projects` folder as the `Z:` network drive.
 
 ---
@@ -405,10 +394,7 @@ Air Staff Only
 4. I opened the **Security** tab.
 5. I clicked **Advanced**.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `ntfs-air-staff-only-properties.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/93d127af-2942-4ae5-b581-e1bd4eadc0ae" />
 > **Description:** The `Air Staff Only Properties` Security tab showing the folder path `Z:\Projects\Air Staff Only` and the existing security principals.
 
 ---
@@ -431,10 +417,8 @@ Convert inherited permissions into explicit permissions
 
 This copied the existing permissions into the folder, giving me a safe starting point without having to recreate every permission manually.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `ntfs-disable-inheritance.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d3a20a3f-e79c-4518-82b5-ad713e38f7c1" />
+
 > **Description:** Advanced Security Settings for `Z:\Projects\Air Staff Only`, showing Disable inheritance and the converted explicit permissions.
 
 ---
@@ -475,10 +459,8 @@ This folder, subfolders and files
 
 The resulting permission allowed the `Air Staff` group to modify the contents of the folder without giving the group Full Control.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `ntfs-air-staff-modify-permission.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0f5094d1-5538-439d-b40a-0fcaa498a87e" />
+
 > **Description:** Permission Entry for `Air Staff Only`, showing `Air Staff (CORP\Air Staff)`, Allow, Modify, and Applies to: This folder, subfolders and files.
 
 The effective permission configuration included:
@@ -502,16 +484,11 @@ From their perspective, the folder simply did not appear inside the shared folde
 
 This provided an additional layer of security while also reducing confusion for users.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `ntfs-access-based-enumeration-denied.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f0595a9f-097a-4440-bf33-d2bb2052a0dc" />
 > **Description:** File Explorer showing the Projects folder from a user without Air Staff access, demonstrating that the restricted folder is not available to the user.
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `ntfs-air-staff-access.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b14d3e5a-20b2-4c32-92ba-0940deb050d8" />
+
 > **Description:** File Explorer showing the `Air Staff Only` folder visible to a member of the Air Staff security group.
 
 ---
@@ -546,10 +523,7 @@ The lab output showed:
 corp\administrator
 ```
 
-> 📸 **Screenshot Placeholder**
->
-> **Filename:** `ntfs-icacls-verification.png`
->
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d9f03197-b23b-469a-ae53-52be266134f2" />
 > **Description:** Command Prompt showing `whoami` and `icacls \\server01\Projects\Air Staff Only`, including the Air Staff Modify permission entry.
 
 Using `icacls` gave me another way to verify the configuration instead of relying only on the graphical interface.
@@ -619,21 +593,43 @@ This is one of the core services provided by Windows Server in many enterprise e
 ---
 
 # Screenshots
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4877db15-03d4-417b-9aeb-90f1d496bbaa" />
+Server Manager showing the Projects SMB share configuration and the local folder path (Z:\Projects)
 
-The following screenshots should be included in the repository to document the file-server implementation:
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7b56924e-88ab-4ada-a22c-11a7d3942af1" />
+Server02 accessing the Projects shared folder using the UNC path (\\server01\Projects) in File Explorer.
 
-| Filename | Description |
-|---|---|
-| `file-server-projects-share-server-manager.png` | Server Manager showing the `Projects` SMB share and `Z:\Projects` path. |
-| `file-server-unc-access-server02.png` | `server02` accessing `\\server01\Projects` through File Explorer. |
-| `file-server-map-network-drive.png` | Map Network Drive dialog using `Z:` and `\\server01\Projects`. |
-| `file-server-mapped-z-drive.png` | `server02` showing the shared folder as the `Z:` drive. |
-| `ntfs-air-staff-only-properties.png` | Security properties for `Air Staff Only`. |
-| `ntfs-disable-inheritance.png` | Advanced Security Settings showing inheritance being disabled. |
-| `ntfs-air-staff-modify-permission.png` | Air Staff permission entry showing Modify access. |
-| `ntfs-access-based-enumeration-denied.png` | Restricted folder hidden from a user without access. |
-| `ntfs-air-staff-access.png` | Air Staff member accessing the restricted folder. |
-| `ntfs-icacls-verification.png` | Command Prompt verification using `whoami` and `icacls`. |
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a6c69b5e-4a05-4aef-858f-a8fbf53a6b97" />
+Map Network Drive dialog configuring the Projects share as the Z: network drive.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a9d3cd57-5755-4d1e-b3dd-7344a0450531" />
+Server02 displaying the successfully mapped Z: network drive connected to the Projects share.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f5977a14-b624-4224-9fb8-f19b22fa4cc0" />
+Folder Properties → Security tab for the Air Staff Only folder.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f2cedfa9-4faa-4a0a-ba26-9e1b3073dc3e" />
+Advanced Security Settings showing NTFS permission inheritance being disabled.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b32e41d1-c321-4649-b448-ba6f0ba9973c" />
+NTFS permission entry granting the Air Staff security group Modify access.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/68198304-11b7-43ad-9bcb-a75a046754df" />
+User without the required permissions unable to see the restricted folder because of Access-Based Enumeration (ABE)
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/29d5f703-7a46-440a-b5a4-d5774511a0f5" />
+Air Staff user successfully accessing the restricted folder after NTFS permissions are applied.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8b5ca300-6c9b-41ef-a010-bc014d745978" />
+Command Prompt verifying user identity and NTFS permissions using whoami and icacls.
+
+
+
+
+
+
+
+
 
 ---
 
