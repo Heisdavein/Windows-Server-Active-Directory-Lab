@@ -4,9 +4,9 @@
 
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Step 1 — Installing the DHCP Server Role](#step-1--installing-the-dhcp-server-role)
-- [Step 2 — Creating the DHCP Scope](#step-2--creating-the-dhcp-scope)
-- [Step 3 — Verifying DHCP Functionality](#step-3--verifying-dhcp-functionality)
+- [Step 1- Installing the DHCP Server Role](#step-1--installing-the-dhcp-server-role)
+- [Step 2- Creating the DHCP Scope](#step-2--creating-the-dhcp-scope)
+- [Step 3- Verifying DHCP Functionality](#step-3--verifying-dhcp-functionality)
 - [Monitoring DHCP Leases](#monitoring-dhcp-leases)
 - [DHCP Configuration Summary](#dhcp-configuration-summary)
 - [How DHCP Works with Active Directory and DNS](#how-dhcp-works-with-active-directory-and-dns)
