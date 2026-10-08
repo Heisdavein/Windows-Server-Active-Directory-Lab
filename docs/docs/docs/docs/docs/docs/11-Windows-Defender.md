@@ -323,14 +323,11 @@ Microsoft Defender Antivirus showing the available scan options, including Quick
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/25c60ab7-1c4a-4c0e-91b3-dd275461c00b" />
 Virus & threat protection updates page showing the current Security intelligence version and update status.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e455a328-c15f-434f-a529-4c3d4dcc51be" />
+Microsoft Defender Antivirus Manage settings page displaying real-time protection and related security options.
 
-
-
-
-
-
-These screenshots provide visual evidence that the Defender configuration and testing steps were actually performed.
-
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/aa056e2e-5cc3-4021-a550-834e9bf20acb" />
+Microsoft Defender Antivirus Exclusions page showing files, folders, or processes excluded from antivirus scans.
 ---
 
 ## What I Learned
