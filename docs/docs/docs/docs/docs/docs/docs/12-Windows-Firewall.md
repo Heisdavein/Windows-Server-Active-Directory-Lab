@@ -259,7 +259,7 @@ This was important because the web application example was intended to communica
 
 ---
 
-## Step 4 — Configure TCP Port 8080
+## Step 4- Configure TCP Port 8080
 
 Under **Specific local ports**, I entered:
 
@@ -278,7 +278,7 @@ I then continued to the next stage of the wizard.
 
 ---
 
-## Step 5 — Allow the Connection
+## Step 5- Allow the Connection
 
 The wizard then asked what action should be taken when a connection matched the conditions of the rule.
 
@@ -301,7 +301,7 @@ I then clicked **Next**.
 
 ---
 
-## Step 6 — Select Network Profiles
+## Step 6- Select Network Profiles
 
 The wizard then asked which network profiles the rule should apply to.
 
@@ -320,7 +320,7 @@ I then clicked **Next**.
 
 ---
 
-## Step 7 — Name the Rule
+## Step 7- Name the Rule
 
 On the final page, I entered the following rule name:
 
