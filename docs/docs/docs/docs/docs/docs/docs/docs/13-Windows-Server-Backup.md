@@ -63,9 +63,8 @@ The purpose was to establish a repeatable backup process rather than relying on 
 
 A scheduled backup provides a more consistent approach to protecting server data because the backup process can occur according to a defined schedule.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `13-01-windows-server-backup.png`  
-> **Description:** Windows Server Backup management interface showing the configured backup environment.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/19ec07f0-b73e-48ca-b4c5-64895b05b341" />
+ Windows Server Backup management interface showing the configured backup environment.
 
 ### Backup Configuration Recorded in the Project
 
@@ -104,9 +103,8 @@ Recovery testing
 Verify that data can be recovered
 ```
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `13-02-backup-recovery-test.png`  
-> **Description:** Evidence of the Windows Server Backup recovery testing performed during the lab.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ab776f09-12bf-4d66-ace8-ebfc603d17e1" />
+Evidence of the Windows Server Backup recovery testing performed during the lab.
 
 Testing recovery was an important part of the exercise because simply assuming that a backup will work is not the same as actually verifying it.
 
@@ -188,14 +186,11 @@ Each component contributes to the reliability and security of the overall enviro
 
 ## Screenshots
 
-The following screenshots should be included in the repository's `screenshots/` directory.
-
-| Filename | Description |
 |---|---|
-| `13-01-windows-server-backup.png` | Windows Server Backup management interface |
-| `13-02-backup-recovery-test.png` | Evidence of the completed recovery testing |
-
-> **Important:** The filenames above are repository placeholders. They should only be used once the corresponding screenshots from the actual project have been identified or captured.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f2d787e0-99ca-49d4-bafa-bd9bd0c8f5ca" />
+ Windows Server Backup management interface
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b3583d87-b87a-480d-9db8-7d9deda15cfc" />
+Evidence of the completed recovery testing 
 
 ---
 
