@@ -339,21 +339,17 @@ This gave me practical experience with both targeted log filtering and reusable 
 
 ## Screenshots
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `14-01-event-viewer-windows-logs.png`  
-> **Description:** Event Viewer showing the Windows Logs section and the available Application, Security, Setup, System, and Forwarded Events logs.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6c55bff4-7673-4589-8049-350ac8c158b6" />
+ Event Viewer showing the Windows Logs section and the available Application, Security, Setup, System, and Forwarded Events logs.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `14-02-event-viewer-security-log.png`  
-> **Description:** Security log showing Windows security and authentication events, including the Event ID column.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3523b170-02de-4287-bd3d-cba2ba87e390" />
+ Security log showing Windows security and authentication events, including the Event ID column.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `14-03-event-viewer-filter.png`  
-> **Description:** Filter Current Log window showing Critical and Error event levels and the option to filter by Event ID.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d336d52c-ebcf-4522-8522-1378a45664cd" />
+Filter Current Log window showing Critical and Error event levels and the option to filter by Event ID.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `14-04-event-viewer-custom-view.png`  
-> **Description:** Custom Views section showing the `All Errors and Criticals` custom view.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/94bfb3a4-1940-4a7e-8e55-5144fa6d67ce" />
+Custom Views section showing the `All Errors and Criticals` custom view.
 
 ---
 
