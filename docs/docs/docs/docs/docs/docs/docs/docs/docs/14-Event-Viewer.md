@@ -276,7 +276,7 @@ Becoming familiar with them gave me a better understanding of what administrator
 
 To make future troubleshooting easier, I created a custom view that automatically displays the most important events from every Windows log.
 
-### Step 1 — Open Custom Views
+### Step 1- Open Custom Views
 
 In the Event Viewer navigation pane, I right-clicked **Custom Views**.
 
@@ -284,7 +284,7 @@ I selected:
 
 **Create Custom View**
 
-### Step 2 — Select Event Levels
+### Step 2- Select Event Levels
 
 I selected:
 
@@ -293,13 +293,13 @@ I selected:
 
 This meant the custom view would focus on the most serious event levels.
 
-### Step 3 — Select the Logs
+### Step 3- Select the Logs
 
 Under **By Log**, I selected:
 
 **All Windows Logs**
 
-### Step 4 — Save the Custom View
+### Step 4- Save the Custom View
 
 I clicked **OK**.
 
