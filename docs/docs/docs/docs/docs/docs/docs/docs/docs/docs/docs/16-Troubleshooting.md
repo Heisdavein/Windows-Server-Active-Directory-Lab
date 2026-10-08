@@ -1,4 +1,4 @@
-# 16 — Troubleshooting
+# 16- Troubleshooting
 
 ## Table of Contents
 
@@ -566,33 +566,23 @@ The following checks were used throughout the project to validate different part
 
 These checks helped me validate individual services instead of assuming that an installation automatically meant the service was working correctly.
 
----
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6af296d0-b21d-45ee-914c-19f2503ee61b" />
+Command Prompt on server02 showing `ping server01.corp.danieltraining.com` and the successful replies used to verify DNS connectivity to server01.
 
-# Screenshots
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3540152f-0332-40e6-8c02-3e145877b509" />
+ Command Prompt showing `ipconfig /release`, `ipconfig /renew`, and `ipconfig /all` used to verify DHCP configuration.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `16-01-dns-connectivity-test.png`  
-> **Description:** Command Prompt on server02 showing `ping server01.corp.danieltraining.com` and the successful replies used to verify DNS connectivity to server01.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a1138072-1dbe-43b6-a53c-26c7864989ec" />
+Command Prompt showing `gpupdate /force` used while testing the custom Group Policy.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `16-02-dhcp-ipconfig-test.png`  
-> **Description:** Command Prompt showing `ipconfig /release`, `ipconfig /renew`, and `ipconfig /all` used to verify DHCP configuration.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d07a4529-5020-4ae6-a9a9-0619ac86d471" />
+ Command Prompt showing `netdom query fsmo` and the FSMO role ownership on server01.
+ 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5574a1fa-04f8-4e67-ab7d-199d25b717e1" />
+ Event Viewer showing filtered Critical and Error events used for troubleshooting.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `16-03-group-policy-update.png`  
-> **Description:** Command Prompt showing `gpupdate /force` used while testing the custom Group Policy.
-
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `16-04-fsmo-query.png`  
-> **Description:** Command Prompt showing `netdom query fsmo` and the FSMO role ownership on server01.
-
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `16-05-event-viewer-troubleshooting.png`  
-> **Description:** Event Viewer showing filtered Critical and Error events used for troubleshooting.
-
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `16-06-file-share-test.png`  
-> **Description:** server02 accessing the `\\server01\Projects` network share to verify file-server connectivity and access.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/bf8a14de-561e-49eb-8731-fb14726fb0fc" />
+ server02 accessing the `\\server01\Projects` network share to verify file-server connectivity and access.
 
 ---
 
