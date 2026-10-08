@@ -256,25 +256,20 @@ The most important lesson I took from this part of the project is that recovery 
 
 ## Screenshots
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `15-01-vmware-before-install-snapshot.png`  
-> **Description:** VMware Workstation showing the `Before Install` snapshot created before the Windows Server installation.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e6171e94-0898-4ba3-9ae8-d006d3b9e5c7" />
+ VMware Workstation showing the `Before Install` snapshot created before the Windows Server installation.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `15-02-windows-server-backup.png`  
-> **Description:** Windows Server Backup configuration showing the backup environment used in the project.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ec994b5d-2730-4c7b-ade2-5417ebb432e3" />
+ Windows Server Backup configuration showing the backup environment used in the project.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `15-03-file-recovery-test.png`  
-> **Description:** Evidence of the file recovery exercise used to verify that backed-up data could be recovered.
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/1e6c8239-e634-4ddb-bff8-2965261498e1" />
+Evidence of the file recovery exercise used to verify that backed-up data could be recovered.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `15-04-storage-spaces-recovery-resilience.png`  
-> **Description:** Storage Spaces configuration showing the parity storage pool and virtual disk used in the lab.
-
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `15-05-fsmo-role-verification.png`  
-> **Description:** Command Prompt showing the `netdom query fsmo` command used to identify the FSMO role holders.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6923aa8c-4096-40ed-9f73-e98f451039e7" />
+ Storage Spaces configuration showing the parity storage pool and virtual disk used in the lab.
+ 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4d851cef-b151-4813-9478-f267a03836b2" />
+ Command Prompt showing the `netdom query fsmo` command used to identify the FSMO role holders.
 
 ---
 
