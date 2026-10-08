@@ -53,9 +53,8 @@ Windows Defender Firewall with Advanced Security
 
 I then launched the application.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-01-firewall-advanced-security.png`  
-> **Description:** Windows Defender Firewall with Advanced Security console showing the Inbound Rules and Outbound Rules sections.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8837c03a-afd8-40af-ac22-7f2d19909f1f" />
+Windows Defender Firewall with Advanced Security console showing the Inbound Rules and Outbound Rules sections.
 
 The advanced console gave me much more detailed control than the standard Windows Firewall interface.
 
@@ -165,9 +164,8 @@ Active Directory Domain Services creates a larger collection of firewall rules t
 - Communication between domain controllers
 - Communication between domain controllers and client computers
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-02-existing-firewall-rules.png`  
-> **Description:** Inbound Rules showing existing Active Directory Domain Services, DHCP Server, DNS Server, File and Printer Sharing, Remote Desktop, and Windows Management Instrumentation rules.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/eae2bf98-28c3-493a-a41f-eb235fce1a4e" />
+Inbound Rules showing existing Active Directory Domain Services, DHCP Server, DNS Server, File and Printer Sharing, Remote Desktop, and Windows Management Instrumentation rules.
 
 I found this particularly useful because it demonstrated how Windows Server simplifies administration by automatically configuring many essential firewall settings when server roles are installed.
 
@@ -201,7 +199,7 @@ The final rule was:
 
 ---
 
-## Step 1 — Open Inbound Rules
+## Step 1- Open Inbound Rules
 
 Inside **Windows Defender Firewall with Advanced Security**, I selected:
 
@@ -214,14 +212,12 @@ I then right-clicked **Inbound Rules** and selected:
 ```text
 New Rule
 ```
-
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-03-new-inbound-rule.png`  
-> **Description:** New Inbound Rule Wizard showing the Rule Type page with Port selected.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3f6af926-447f-4e21-912c-f7c7aafca8b2" />
+ New Inbound Rule Wizard showing the Rule Type page with Port selected.
 
 ---
 
-## Step 2 — Create a New Rule
+## Step 2- Create a New Rule
 
 The **New Inbound Rule Wizard** opened.
 
@@ -248,7 +244,7 @@ Next
 
 ---
 
-## Step 3 — Select Port
+## Step 3- Select Port
 
 On the **Protocol and Ports** page, I selected:
 
@@ -258,9 +254,8 @@ TCP
 
 This was important because the web application example was intended to communicate using TCP.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-04-firewall-protocol-port.png`  
-> **Description:** Protocol and Ports page showing TCP selected and port 8080 entered as the specific local port.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/91c0fb08-62c1-4f12-a330-369d5bff4c53" />
+ Protocol and Ports page showing TCP selected and port 8080 entered as the specific local port.
 
 ---
 
@@ -301,9 +296,8 @@ Allow the connection
 
 I then clicked **Next**.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-05-firewall-allow-connection.png`  
-> **Description:** Action page of the New Inbound Rule Wizard with Allow the connection selected.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b89b6740-5363-450c-903a-b5ffda9ebf00" />
+ Action page of the New Inbound Rule Wizard with Allow the connection selected.
 
 ---
 
@@ -321,9 +315,8 @@ Public
 
 I then clicked **Next**.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-06-firewall-network-profiles.png`  
-> **Description:** Profile page showing Domain, Private, and Public selected.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0871ed31-4df5-48d0-b18a-9304b05cd020" />
+ Profile page showing Domain, Private, and Public selected.
 
 ---
 
@@ -343,9 +336,8 @@ Allows incoming connections to the web application on TCP port 8080.
 
 I then clicked **Finish**.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-07-firewall-rule-name.png`  
-> **Description:** Final page of the New Inbound Rule Wizard showing the exact rule name and description.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3b53cd4b-40f3-441d-8788-b49cff15695d" />
+ Final page of the New Inbound Rule Wizard showing the exact rule name and description.
 
 ---
 
@@ -363,9 +355,8 @@ The rule was active immediately.
 
 It allowed incoming connections to TCP port 8080, provided that a service was actually listening on that port.
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-08-firewall-rule-created.png`  
-> **Description:** Inbound Rules showing Allow TCP 8080 - Web App listed alongside the existing Windows Server firewall rules.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8a15364a-cfe9-4785-bb22-36417bb6de7b" />
+Inbound Rules showing Allow TCP 8080 - Web App listed alongside the existing Windows Server firewall rules.
 
 I also opened the rule's properties to review the configuration.
 
@@ -392,9 +383,8 @@ Protocol type: TCP
 Local port: 8080
 ```
 
-> 📸 **Screenshot Placeholder**  
-> **Filename:** `12-09-firewall-rule-properties.png`  
-> **Description:** Properties of Allow TCP 8080 - Web App showing the rule name, enabled status, TCP protocol, and local port 8080.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/fea78cc5-e321-40f9-bbbb-cf54093d0c5c" />
+Properties of Allow TCP 8080 - Web App showing the rule name, enabled status, TCP protocol, and local port 8080.
 
 ---
 
@@ -454,19 +444,33 @@ By creating and reviewing the TCP 8080 rule myself, I gained a better understand
 
 ## Screenshots
 
-The following screenshots should be included in the repository's `screenshots/` directory:
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0b440d9a-74f6-4047-9321-db312913639b" />
+Windows Defender Firewall with Advanced Security console showing the firewall management interface.
 
-| Filename | Description |
-|---|---|
-| `12-01-firewall-advanced-security.png` | Windows Defender Firewall with Advanced Security console |
-| `12-02-existing-firewall-rules.png` | Existing AD DS, DNS, DHCP and other firewall rules |
-| `12-03-new-inbound-rule.png` | New Inbound Rule Wizard – Rule Type |
-| `12-04-firewall-protocol-port.png` | TCP port 8080 configuration |
-| `12-05-firewall-allow-connection.png` | Allow the connection action |
-| `12-06-firewall-network-profiles.png` | Domain, Private and Public profiles |
-| `12-07-firewall-rule-name.png` | Rule name and description |
-| `12-08-firewall-rule-created.png` | Completed firewall rule in Inbound Rules |
-| `12-09-firewall-rule-properties.png` | Properties of the TCP 8080 rule |
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/91f7ed72-9100-4f38-b8b5-d701573431f6" />
+Inbound Rules section displaying existing firewall rules for services such as AD DS, DNS, DHCP, and other Windows services.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1457977d-b30f-4b20-b807-b48b9306edd6" />
+New Inbound Rule Wizard showing the Rule Type selection step.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e4b0a567-a6c5-4c98-9a2e-7537e1a1aa72" />
+New Inbound Rule Wizard showing the Allow the connection action selected.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c6506f0b-839c-4c04-9533-91857235c087" />
+New Inbound Rule Wizard showing firewall rule scope selection for Domain, Private, and Public network profiles.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/bfcb097d-d517-402a-a073-78678fd51d35" />
+Windows Defender Firewall with Advanced Security showing the newly created TCP 8080 inbound rule in the Inbound Rules list.
+Firewall Rule Properties window showing the configuration details of the TCP 8080 inbound rule.
+
+
+
+
+New Inbound Rule Wizard showing TCP selected with port 8080 configured as the specific local port.
+
+
+
+
 
 ---
 
